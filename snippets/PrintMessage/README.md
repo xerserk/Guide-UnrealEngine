@@ -10,6 +10,7 @@ void YourClass::PrintMessage()
 {
     int Number = 42;
     float Pi = 3.14159f;
+    bool isBoolean = true;
     FString Name = TEXT("John Doe");
 
     // Using the print macro to print a simple text message
@@ -19,6 +20,8 @@ void YourClass::PrintMessage()
     printFString("The number is: %d", Number);
     printFString("The value of Pi is: %f", Pi);
     printFString("My name is: %s", *Name);
+    printFString("My name is: %b", *Name);
+    printFString("My boolean: %b"), isBoolean);
 }
 ```
 
